@@ -28,7 +28,8 @@
         rgb(255, 198, 243),
         transparent 80%
     );
-    box-shadow: 5px 5px 5px rgba(114, 0, 89, 0.5); 
+    box-shadow: 5px 5px 5px rgba(114, 0, 89, 0.5);
+    transition: all 1.1s ease-in-out;
 }
 
 .tiny {
@@ -64,8 +65,14 @@
     font-size: 12rem;
     font-family: 'Fugaz One', cursive;
     text-shadow: 5px 5px 5px rgba(114, 0, 89, 0.5);
+    transition: all 1.1s ease-in-out;
 }
 
 .title:hover {
     z-index: 101;
+    transform: scale(1.1);
+}
+
+.bubble:hover {
+    transform: scale(1.1);
 }
