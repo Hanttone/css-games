@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,187,124);
+    background: linear-gradient(138deg, rgba(255,187,124,1) 0%, rgba(255,124,218,1) 35%, rgba(255,63,156,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: dense;
+    position: relative;
+}   
+
+.bubble {
+    height: 150px;
+    width: 150px;
+    margin: 5% 5%;
+    border-radius: 50%;
+    background: rgb(252, 34, 179);
+    background-image: radial-gradient(
+        circle at top left,
+        rgb(255, 198, 243),
+        transparent 80%
+    );
+    box-shadow: 5px 5px 5px rgba(114, 0, 89, 0.5); 
+}
+
+.tiny {
+    height: 20px;
+    width: 20px;
+}
+
+.small {
+    height: 80px;
+    width: 80px;
+}
+
+
+.big {
+    height: 200px;
+    width: 200px;
+}
+
+.massive {
+    height: 300px;
+    width: 300px;
+}
+
+.top {
+    z-index: 100;
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 13vw;
+    color: rgb(252, 239, 239);
+    font-size: 12rem;
+    font-family: 'Fugaz One', cursive;
+    text-shadow: 5px 5px 5px rgba(114, 0, 89, 0.5);
+}
+
+.title:hover {
+    z-index: 101;
+}
